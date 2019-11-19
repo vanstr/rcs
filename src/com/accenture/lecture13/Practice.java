@@ -1,6 +1,5 @@
 package com.accenture.lecture13;
 
-import java.util.Scanner;
 
 public class Practice {
 
@@ -49,10 +48,15 @@ public class Practice {
 		
 		
 		
-		// Task 4 - getAvaregeDouble() should return sum of all elements of passed array
-		// You should get printed out into console: Average is 9.0
-		double doubleAvarege = getAvaregeDouble(myArrays);
-		System.out.println("Avarege double value is " + doubleAvarege);
+		// Task 4.1 - declare method getMaxValue(), it should return biggest element value of array 
+		// You should get printed out into console: Maximum is 18.0		
+		//int max = getMaxValue(myArrays);
+		//System.out.println("Maximum is " + max);
+		
+		// Task 4.2 - declare method getAvaregeDouble(), it should return sum of all elements of passed array
+		// You should get printed out into console: Average is 9.0		
+		//double doubleAvarege = getAvaregeDouble(myArrays);
+		//System.out.println("Avarege double value is " + doubleAvarege);
 
 		
 		
@@ -95,45 +99,29 @@ public class Practice {
 		
 		
 		// Task 8.1 - rewrite your program, that Scanner object would be initialized only once in your program
-		// * hint, think about making Scanner instance(object) as a class static field and use it in your code
-		
-		// Task 8.2 - 
-		
-		
-		
+		// * hint, think about making Scanner instance(object) as a class static field and refer to it in your code	
+			
 		
 	}
 
-	public static void printArray(int[] arrays) {
-		for (int i = 0; i < arrays.length; i++) {
-			System.out.println(i + " element is " + arrays[i]);
-		}
+	public static void printArray(int[] someArray) {
+		// TODO should print out into console content of someArray
 	}
 
-	public static int getSum(int[] arrays) {
-		int sum = 0;
-		for (int i = 0; i < arrays.length; i++) {
-			sum += arrays[i];
-		}
-		return sum;
+	public static int getSum(int[] someArray) {
+		// TODO implement method, that it will return sum of all elements of passed in array 'someArray' 
+		return 0;
 	}
 
-	public static int getAvarege(int[] arrays) {
-		return getSum(arrays) / arrays.length;
-	}
-
-	public static double getAvaregeDouble(int[] arrays) {
-		return (double) getSum(arrays) / (double) arrays.length;
+	public static int getAvarege(int[] someArray) {
+		// TODO implement method, that it will return average of all elements of array 'someArray' 
+		return 0;
 	}
 
 	public static int[] getArrayDefinedByUser(int numbers) {
 		System.out.println("Enter " + numbers + "thy:");
-		Scanner scanner = new Scanner(System.in);
-		int[] values = new int[numbers];
-		for (int i = 0; i < values.length; i++) {
-			values[i] = scanner.nextInt();
-		}
-		return values;
+		// TODO implement method, according to requirements of Task 8
+		return null;
 	}
 
 }

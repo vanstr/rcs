@@ -11,6 +11,9 @@ public class Practice {
 		}
 
 		// Task 0 - move "Hello world" output into method sayHi() and call it twice
+		// You should get printed out into console:
+		// Hello world
+		// Hello world
 		System.out.println("Hello world");
 		
 		//	Task 1 - print out into console content of myArray, as following 
@@ -60,7 +63,7 @@ public class Practice {
 
 		
 		
-		// Task 5 - getArrayDefinedByUser() this method should ask user to fill array of 3 elements  	
+		// Task 5 - getArrayDefinedByUser() - should ask user to fill array of 3 elements and return that array  	
 		// Possible console content:
 		//	Enter 3thy:
 		//	3

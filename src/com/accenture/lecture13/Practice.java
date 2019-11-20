@@ -3,6 +3,10 @@ package com.accenture.lecture13;
 
 public class Practice {
 
+	
+	static void sayHi(){
+		System.out.println("Hello world");
+	}
 	public static void main(String[] args) {
 		int[] myArrays = new int[10];
 		for (int i = 0; i < myArrays.length; i++) {
@@ -14,7 +18,9 @@ public class Practice {
 		// You should get printed out into console:
 		// Hello world
 		// Hello world
-		System.out.println("Hello world");
+		sayHi();
+		sayHi();
+		
 		
 		//	Task 1 - print out into console content of myArray, as following 
 		//	0 element is 0

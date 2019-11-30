@@ -1,7 +1,5 @@
 package com.accenture.lecture17.shape;
 
-import com.accenture.lecture17.Vehicle;
-
 public class InterfaceExampleApp {
 	public static void main(String[] args) {
 		Rectangle rec1 = new Rectangle(2.0,  4.0);
@@ -11,6 +9,9 @@ public class InterfaceExampleApp {
 		
 		Shape shape1 = new Rectangle(3.0,  4.0);
 		System.out.println("Shape shape1 area = " + shape1);
+		
+		
+		// example loop
 		
 		
 	}

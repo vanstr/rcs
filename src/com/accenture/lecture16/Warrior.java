@@ -36,11 +36,7 @@ public class Warrior {
 	}
 
 	private boolean isAlive() {
-		if (health > 0) {
-			return true;
-		} else {
-			return false;
-		}
+		return health > 0 ? true : false;
 	}
 
 	public void receivedDamage(int damage) {
@@ -65,7 +61,7 @@ public class Warrior {
 				} else {
 					health = MAX_HEALTH;
 					System.out.print("The maximum health of " + name + " is now set to maximum value: " + MAX_HEALTH);
-				}				
+				}
 			} else {
 				System.out.println("The planned action is not valid.");
 			}
@@ -85,9 +81,9 @@ public class Warrior {
 			}
 		}
 		if (!isAlive()) {
-			System.out.println("Fight is finished! Winner :" + anotherWarrior.getName() + " Lost: " + getName());
+			System.out.println("Fight is finished! Winner:" + anotherWarrior.getName() + " loose: " + getName());
 		} else {
-			System.out.println("Fight is finished! Winner :" + getName() + " Lost: " + anotherWarrior.getName());
+			System.out.println("Fight is finished! Winner:" + getName() + " loose: " + anotherWarrior.getName());
 		}
 	}
 

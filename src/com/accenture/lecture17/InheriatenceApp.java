@@ -6,19 +6,21 @@ import java.util.List;
 public class InheriatenceApp {
 
 	public static void main(String[] args) {
-		Vehicle myVehicle = new Vehicle();
-		myVehicle.drive();
+//		Vehicle myVehicle = new Vehicle();
+//		myVehicle.drive();
 		
 		
 		
-		// System.out.println("State inheritance example");
-		Car myCar = new Car();	
+		System.out.println("State inheritance example");
+		WheelVehicle myCar = new WheelVehicle(4);	
 		myCar.seats = 4;
-		myCar.wheels = 4;
-		System.out.println("Car has seets:" + myCar.seats);
-		System.out.println("Car has numbe:r" + myCar.number);
-		System.out.println("Car has wheels:" + myCar.wheels);
 		
+		myCar.drive();
+		
+		System.out.println("Car has seets:" + myCar.seats);
+		System.out.println("Car has numbe:" + myCar.number);
+		System.out.println("Car has wheels:" + myCar.wheels);
+//		
 		
 		// Constructor example, with super(va1, val2), 
 		
